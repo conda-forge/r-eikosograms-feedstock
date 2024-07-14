@@ -1,6 +1,5 @@
 {% set version = '0.1.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-eikosograms
@@ -13,8 +12,7 @@ source:
   sha256: 3a7435754c15d56c192f3bdd91fca27c25bcb36b09665d87859647c418e6458f
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
